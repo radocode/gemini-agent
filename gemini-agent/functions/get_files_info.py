@@ -116,3 +116,10 @@ def run_python_file(working_directory, file_path):
 
     except Exception as e:
         return f"Error: {e}"
+
+def call_function(function_call_part, verbose=False):
+    if verbose:
+        print(f"Calling function: {function_call_part.name}({function_call_part.args})")
+    else:
+        print(f" - Calling function: {function_call_part.name}")
+
